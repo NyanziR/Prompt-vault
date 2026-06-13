@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="200 free, ready-to-use AI prompts for educators — lesson planning, assessment, feedback, differentiation, parent communication, and productivity.">
+<title>The Educator's AI Prompt Vault</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F8F8F5;--primary:#4F46E5;--primary-dark:#4338CA;--secondary:#14B8A6;--text:#1F2937;--text-light:#6B7280;--white:#fff;--shadow:0 4px 16px rgba(31,41,55,.08);--shadow-lg:0 10px 30px rgba(31,41,55,.12);--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--primary)}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.nav{position:sticky;top:0;z-index:100;background:rgba(248,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,41,55,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:1.05rem;color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.brand-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--secondary))}
+.nav-links{display:flex;gap:1.4rem;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;color:var(--text-light);font-weight:500;font-size:.95rem;transition:color .2s}
+.nav-links a:hover,.nav-links a:focus{color:var(--primary)}
+.nav-cta{background:var(--primary);color:#fff!important;padding:.5rem 1.1rem;border-radius:999px;font-weight:600}
+.nav-cta:hover{background:var(--primary-dark)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:.5rem;border-radius:8px}
+.hamburger:focus-visible{outline:3px solid var(--secondary);outline-offset:2px}
+.hamburger span{display:block;width:24px;height:2.5px;background:var(--text);margin:5px 0;border-radius:2px;transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.hero{padding:4rem 0 3rem;text-align:center}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.3rem);font-weight:800;line-height:1.15;letter-spacing:-.02em}
+.hero h1 .accent{background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{margin:1.1rem auto 0;max-width:640px;font-size:1.13rem;color:var(--text-light)}
+.free-badge{display:inline-block;background:rgba(20,184,166,.12);color:#0D9488;font-weight:700;font-size:.85rem;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.1rem;letter-spacing:.03em}
+.checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.6rem 1rem;max-width:760px;margin:2rem auto 0;text-align:left;list-style:none}
+.checks li{display:flex;align-items:center;gap:.55rem;font-weight:500;font-size:.96rem}
+.checks .tick{flex:none;width:22px;height:22px;border-radius:50%;background:rgba(20,184,166,.14);color:var(--secondary);display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+.btn{display:inline-block;border:none;cursor:pointer;font-family:inherit;font-weight:700;font-size:1.02rem;padding:.9rem 2.1rem;border-radius:999px;background:var(--primary);color:#fff;text-decoration:none;box-shadow:var(--shadow);transition:.2s}
+.btn:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn:focus-visible{outline:3px solid var(--secondary);outline-offset:3px}
+.hero .btn{margin-top:2rem}
+.proof{padding:.5rem 0 2.5rem}
+.proof-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem 1.5rem;text-align:center;max-width:640px;margin:0 auto}
+.stars{font-size:1.35rem;letter-spacing:.15em}
+.proof-card .rating{margin-top:.4rem;font-weight:600}
+.proof-card blockquote{margin-top:.9rem;font-size:1.1rem;font-style:italic;color:var(--text-light)}
+.avatars{display:flex;justify-content:center;margin-top:1.2rem}
+.avatar{width:38px;height:38px;border-radius:50%;border:3px solid #fff;margin-left:-10px;display:inline-flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:#fff}
+.avatar:first-child{margin-left:0}
+section{padding:3rem 0}
+.section-title{text-align:center;font-size:clamp(1.6rem,4vw,2.1rem);font-weight:800}
+.section-sub{text-align:center;color:var(--text-light);max-width:580px;margin:.7rem auto 0}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem;margin-top:2.2rem}
+.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1.6rem;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:1.08rem;font-weight:700;margin-bottom:.4rem}
+.card p{color:var(--text-light);font-size:.94rem}
+.benefit-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:.9rem;background:rgba(79,70,229,.1)}
+.benefit-icon.teal{background:rgba(20,184,166,.12)}
+.signup-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:2.3rem 1.6rem;max-width:520px;margin:1.6rem auto 0}
+.signup-card h2{font-size:1.55rem;font-weight:800;text-align:center}
+.signup-card .sub{text-align:center;color:var(--text-light);margin:.5rem 0 1.5rem;font-size:.96rem}
+.field{margin-bottom:1.05rem}
+.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:.35rem}
+.field input,.field select{width:100%;font-family:inherit;font-size:1rem;padding:.78rem 1rem;border:1.5px solid rgba(31,41,55,.15);border-radius:10px;background:var(--bg);transition:.2s}
+.field input:focus,.field select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,70,229,.15)}
+.field .error{color:#DC2626;font-size:.82rem;margin-top:.3rem;display:none}
+.field.invalid input{border-color:#DC2626}
+.field.invalid .error{display:block}
+.signup-card .btn{width:100%;margin-top:.3rem}
+.success-msg{display:none;text-align:center;padding:1.3rem 0}
+.success-msg .big-check{width:60px;height:60px;border-radius:50%;background:rgba(20,184,166,.14);color:var(--secondary);font-size:1.8rem;display:inline-flex;align-items:center;justify-content:center;margin-bottom:.8rem}
+.success-msg h3{font-size:1.2rem;font-weight:700}
+.success-msg p{color:var(--text-light);margin-top:.4rem}
+/* Vault */
+.vault-locked{position:relative;text-align:center;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:3rem 1.5rem;max-width:640px;margin:2rem auto 0}
+.vault-locked .lock{font-size:2.4rem}
+.vault-locked h3{font-size:1.25rem;font-weight:700;margin:.7rem 0 .4rem}
+.vault-locked p{color:var(--text-light)}
+.vault-locked .btn{margin-top:1.3rem}
+.vault-tools{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center;margin:1.8rem 0 1.2rem}
+.vault-tools input[type=search]{flex:1 1 260px;max-width:380px;font-family:inherit;font-size:.97rem;padding:.7rem 1.1rem;border:1.5px solid rgba(31,41,55,.15);border-radius:999px;background:#fff}
+.vault-tools input[type=search]:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(79,70,229,.15)}
+.cat-filters{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.4rem}
+.cat-btn{font-family:inherit;font-size:.85rem;font-weight:600;padding:.45rem 1rem;border-radius:999px;border:1.5px solid rgba(31,41,55,.12);background:#fff;color:var(--text-light);cursor:pointer;transition:.2s}
+.cat-btn:hover{border-color:var(--primary);color:var(--primary)}
+.cat-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.cat-btn:focus-visible{outline:3px solid var(--secondary);outline-offset:2px}
+.prompt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.1rem}
+.p-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1.25rem;display:flex;flex-direction:column;border-top:3px solid var(--primary)}
+.p-card.alt{border-top-color:var(--secondary)}
+.p-card .tag{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--secondary);margin-bottom:.45rem}
+.p-card h4{font-size:.98rem;font-weight:700;margin-bottom:.45rem}
+.p-card .ptext{background:var(--bg);border-radius:10px;padding:.85rem;font-size:.87rem;color:var(--text);border:1px solid rgba(31,41,55,.07);flex:1}
+.copy-btn{margin-top:.8rem;background:var(--primary);color:#fff;border:none;font-family:inherit;font-weight:600;font-size:.85rem;padding:.5rem 1.2rem;border-radius:999px;cursor:pointer;transition:.2s;align-self:flex-start;display:inline-flex;align-items:center;gap:.4rem}
+.copy-btn:hover{background:var(--primary-dark)}
+.copy-btn:focus-visible{outline:3px solid var(--secondary);outline-offset:2px}
+.copy-btn.copied{background:var(--secondary)}
+.vault-count{text-align:center;color:var(--text-light);font-size:.9rem;margin-bottom:1.2rem}
+.download-bar{text-align:center;margin-top:2rem}
+.btn.outline{background:#fff;color:var(--primary);border:2px solid var(--primary)}
+.btn.outline:hover{background:#EEF2FF}
+/* FAQ */
+.faq-list{max-width:720px;margin:2rem auto 0}
+.faq-item{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:.9rem;overflow:hidden}
+.faq-q{width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:1rem;font-weight:600;color:var(--text);padding:1.1rem 1.3rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-q:focus-visible{outline:3px solid var(--secondary);outline-offset:-3px;border-radius:var(--radius)}
+.faq-q .chev{transition:transform .3s;color:var(--primary);font-size:.85rem}
+.faq-item.open .chev{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 1.3rem 1.2rem;color:var(--text-light);font-size:.95rem}
+.final-cta{text-align:center;background:linear-gradient(135deg,var(--primary),#6366F1 60%,var(--secondary));border-radius:var(--radius);padding:3rem 1.5rem;color:#fff;box-shadow:var(--shadow-lg)}
+.final-cta h2{font-size:clamp(1.6rem,4vw,2.1rem);font-weight:800}
+.final-cta .btn{margin-top:1.5rem;background:#fff;color:var(--primary)}
+.final-cta .btn:hover{background:#EEF2FF}
+footer{padding:2.6rem 0 6rem;text-align:center;color:var(--text-light);font-size:.92rem}
+footer .foot-brand{font-weight:700;color:var(--text)}
+footer .foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1.3rem;list-style:none;margin:1rem 0}
+footer a{text-decoration:none;color:var(--text-light);transition:.2s;background:none;border:none;font-family:inherit;font-size:.92rem;cursor:pointer}
+footer a:hover,footer a:focus{color:var(--primary)}
+.to-top{position:fixed;left:1.2rem;bottom:1.2rem;width:46px;height:46px;border-radius:50%;border:none;background:var(--primary);color:#fff;font-size:1.1rem;cursor:pointer;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:.3s;z-index:90}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{background:var(--primary-dark)}
+.to-top:focus-visible{outline:3px solid var(--secondary);outline-offset:3px}
+/* Chatbot */
+.chat-fab{position:fixed;right:1.2rem;bottom:1.2rem;z-index:95;border:none;cursor:pointer;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-radius:999px;padding:.85rem 1.4rem;font-family:inherit;font-weight:700;font-size:.95rem;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:.5rem;transition:.2s}
+.chat-fab:hover{transform:translateY(-2px)}
+.chat-fab:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+.chat-panel{position:fixed;right:1rem;bottom:5.4rem;z-index:96;width:min(380px,calc(100vw - 2rem));height:min(540px,72vh);background:#fff;border-radius:18px;box-shadow:0 18px 50px rgba(31,41,55,.25);display:none;flex-direction:column;overflow:hidden}
+.chat-panel.open{display:flex}
+.chat-head{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;padding:.95rem 1.1rem;display:flex;align-items:center;gap:.7rem}
+.chat-head .bot-av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.chat-head h3{font-size:1rem;font-weight:700;line-height:1.2}
+.chat-head p{font-size:.74rem;opacity:.85}
+.chat-close{margin-left:auto;background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer;padding:.2rem .5rem;border-radius:8px}
+.chat-close:focus-visible{outline:2px solid #fff}
+.chat-body{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.7rem;background:var(--bg)}
+.msg{max-width:85%;padding:.65rem .9rem;border-radius:14px;font-size:.9rem;line-height:1.45;white-space:pre-wrap;word-wrap:break-word}
+.msg.bot{background:#fff;box-shadow:var(--shadow);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.user{background:var(--primary);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg.typing{color:var(--text-light);font-style:italic}
+.chat-suggest{display:flex;flex-wrap:wrap;gap:.4rem;padding:0 1rem .5rem;background:var(--bg)}
+.chip{font-family:inherit;font-size:.76rem;font-weight:600;background:#fff;border:1.5px solid rgba(79,70,229,.3);color:var(--primary);border-radius:999px;padding:.32rem .75rem;cursor:pointer;transition:.2s}
+.chip:hover{background:var(--primary);color:#fff}
+.chat-input{display:flex;gap:.5rem;padding:.8rem;background:#fff;border-top:1px solid rgba(31,41,55,.08)}
+.chat-input input{flex:1;font-family:inherit;font-size:.92rem;padding:.65rem .9rem;border:1.5px solid rgba(31,41,55,.15);border-radius:999px}
+.chat-input input:focus{outline:none;border-color:var(--primary)}
+.chat-send{border:none;background:var(--primary);color:#fff;font-weight:700;font-family:inherit;border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;transition:.2s}
+.chat-send:hover{background:var(--primary-dark)}
+.chat-send:focus-visible{outline:3px solid var(--secondary);outline-offset:2px}
+/* Stats modal */
+.modal-bg{position:fixed;inset:0;background:rgba(31,41,55,.5);z-index:120;display:none;align-items:center;justify-content:center;padding:1rem}
+.modal-bg.open{display:flex}
+.modal{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-lg);max-width:480px;width:100%;padding:1.8rem;max-height:85vh;overflow-y:auto}
+.modal h3{font-size:1.25rem;font-weight:800;margin-bottom:.3rem}
+.modal .note{font-size:.83rem;color:var(--text-light);margin-bottom:1.2rem}
+.stat-row{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid rgba(31,41,55,.07);font-size:.93rem}
+.stat-row strong{color:var(--primary)}
+.modal .btn{margin-top:1.3rem;width:100%}
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fade-in{opacity:1;transform:none;transition:none}*{transition:none!important;animation:none!important}}
+@media (max-width:760px){
+  .hamburger{display:block}
+  .nav-links{position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#fff;box-shadow:var(--shadow-lg);padding:1.2rem;gap:1rem;display:none;border-radius:0 0 var(--radius) var(--radius)}
+  .nav-links.open{display:flex}
+  .hero{padding:2.8rem 0 2.2rem}
+  section{padding:2.4rem 0}
+  .checks{grid-template-columns:1fr 1fr}
+  .chat-panel{right:.6rem;bottom:5rem}
+}
+@media (max-width:430px){.checks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#top" class="brand"><span class="brand-dot" aria-hidden="true"></span>Prompt Vault</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#vault">Prompt Library</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#signup" class="nav-cta" id="navCta">Get Free Access</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+<header class="hero">
+  <div class="container">
+    <span class="free-badge fade-in">100% FREE FOR EDUCATORS</span>
+    <h1 class="fade-in">The Educator's <span class="accent">Prompt Vault</span></h1>
+    <p class="sub fade-in">200 ready-to-use prompts for lesson planning, grading, assessment, and student engagement. Sign up once, get everything — free.</p>
+    <ul class="checks fade-in" aria-label="What the library covers">
+      <li><span class="tick" aria-hidden="true">✓</span>Lesson planning</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Quiz generation</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Rubrics</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Student feedback</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Differentiation</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Parent communication</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Research assistance</li>
+      <li><span class="tick" aria-hidden="true">✓</span>Administrative tasks</li>
+    </ul>
+    <a href="#signup" class="btn fade-in">Get Instant Access</a>
+  </div>
+</header>
+
+<section class="proof" aria-label="Educator reviews">
+  <div class="container">
+    <div class="proof-card fade-in">
+      <div class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+      <p class="rating">4.9/5 from 3,000+ educators</p>
+      <blockquote>"These prompts save me hours every week."</blockquote>
+      <div class="avatars" aria-hidden="true">
+        <span class="avatar" style="background:#4F46E5">JM</span><span class="avatar" style="background:#14B8A6">AK</span><span class="avatar" style="background:#F59E0B">SN</span><span class="avatar" style="background:#8B5CF6">PO</span><span class="avatar" style="background:#EC4899">DT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <div class="container">
+    <h2 class="section-title fade-in">Why Teachers Love This Library</h2>
+    <div class="grid-4">
+      <div class="card fade-in"><div class="benefit-icon" aria-hidden="true">⏱️</div><h3>Save Time</h3><p>Generate lessons, quizzes, and activities in seconds.</p></div>
+      <div class="card fade-in"><div class="benefit-icon teal" aria-hidden="true">🌿</div><h3>Reduce Burnout</h3><p>Automate repetitive teaching tasks.</p></div>
+      <div class="card fade-in"><div class="benefit-icon" aria-hidden="true">✨</div><h3>Improve Student Engagement</h3><p>Create personalized learning experiences.</p></div>
+      <div class="card fade-in"><div class="benefit-icon teal" aria-hidden="true">🤖</div><h3>Works With Any AI</h3><p>Compatible with ChatGPT, Claude, Gemini, and Copilot.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNUP -->
+<section id="signup">
+  <div class="container">
+    <div class="signup-card fade-in">
+      <div id="formWrap">
+        <h2>Get Instant Access</h2>
+        <p class="sub">Enter your details below to unlock all 200 prompts. Free, forever.</p>
+        <form id="leadForm" novalidate>
+          <div class="field" id="fieldName">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" autocomplete="name" required aria-describedby="errName">
+            <p class="error" id="errName">Please enter your full name.</p>
+          </div>
+          <div class="field" id="fieldEmail">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" autocomplete="email" required aria-describedby="errEmail">
+            <p class="error" id="errEmail">Please enter a valid email address.</p>
+          </div>
+          <div class="field" id="fieldSchool">
+            <label for="school">Institution / School</label>
+            <input type="text" id="school" autocomplete="organization" required aria-describedby="errSchool">
+            <p class="error" id="errSchool">Please enter your institution or school.</p>
+          </div>
+          <div class="field">
+            <label for="role">Your Role (optional)</label>
+            <select id="role">
+              <option value="">Select…</option>
+              <option>Teacher (K-12 / Primary / Secondary)</option>
+              <option>Professor / Lecturer</option>
+              <option>Instructional Designer</option>
+              <option>School Administrator</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Unlock the Vault — Free</button>
+        </form>
+      </div>
+      <div class="success-msg" id="successMsg" role="status">
+        <div class="big-check" aria-hidden="true">✓</div>
+        <h3>Thank you! Your access is unlocked.</h3>
+        <p>Scroll down — all 200 prompts are now open below.</p>
+        <a href="#vault" class="btn" style="margin-top:1.2rem">Go to the Prompt Library</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VAULT -->
+<section id="vault">
+  <div class="container">
+    <h2 class="section-title fade-in">The Prompt Library</h2>
+    <p class="section-sub fade-in">200 practical prompts across six categories. Copy any prompt, paste it into your AI tool, and replace the [bracketed] details.</p>
+
+    <div class="vault-locked" id="vaultLocked">
+      <div class="lock" aria-hidden="true">🔒</div>
+      <h3>The vault is locked</h3>
+      <p>Sign up above (it's free) to unlock all 200 prompts instantly.</p>
+      <a href="#signup" class="btn">Unlock Free Access</a>
+    </div>
+
+    <div id="vaultOpen" style="display:none">
+      <div class="vault-tools">
+        <input type="search" id="searchBox" placeholder="Search prompts… e.g. rubric, quiz, parent email" aria-label="Search prompts">
+        <button class="btn outline" id="downloadBtn">⬇ Download All (.txt)</button>
+      </div>
+      <div class="cat-filters" id="catFilters" role="group" aria-label="Filter by category"></div>
+      <p class="vault-count" id="vaultCount"></p>
+      <div class="prompt-grid" id="promptGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-q" aria-expanded="false">What AI tools work with these prompts?<span class="chev" aria-hidden="true">▼</span></button>
+        <div class="faq-a"><p>All of them. The prompts are written in plain language, so they work with ChatGPT, Claude, Gemini, Microsoft Copilot, and any other AI chatbot. Just copy, paste, and fill in the [bracketed] details.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-q" aria-expanded="false">Do I need AI experience?<span class="chev" aria-hidden="true">▼</span></button>
+        <div class="faq-a"><p>Not at all. Every prompt is ready to use as-is. If you can copy and paste, you can use this library. If you get stuck, ask Nyanzi — the assistant in the corner of your screen.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-q" aria-expanded="false">Can professors use them?<span class="chev" aria-hidden="true">▼</span></button>
+        <div class="faq-a"><p>Yes. The prompts work across K-12, higher education, and vocational training, and many adapt easily for syllabus design, research support, and university-level assessment. Dedicated collections for instructional designers and administrators are coming soon.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-q" aria-expanded="false">Are updates included?<span class="chev" aria-hidden="true">▼</span></button>
+        <div class="faq-a"><p>Yes. As AI tools evolve, the library is updated with new and improved prompts. Access is free and every update is included.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-q" aria-expanded="false">Who is Nyanzi?<span class="chev" aria-hidden="true">▼</span></button>
+        <div class="faq-a"><p>Nyanzi is the site's built-in AI assistant. Click the button in the bottom-right corner to ask how to use a prompt, find the right one for your task, or get tips for adapting prompts to your classroom.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Final call to action">
+  <div class="container">
+    <div class="final-cta fade-in">
+      <h2>Start Saving Hours Every Week</h2>
+      <a href="#signup" class="btn">Get Free Access</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="foot-brand">The Educator's AI Prompt Vault</p>
+    <p>Created by Ronald Nyanzi · © <span id="year"></span></p>
+    <ul class="foot-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="https://github.com/ronaldnyanzi" target="_blank" rel="noopener">GitHub</a></li>
+      <li><button id="statsLink" style="background:none;border:none;color:inherit;font:inherit;cursor:pointer">📊 Usage Stats</button></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Scroll back to top">↑</button>
+
+<!-- NYANZI CHATBOT -->
+<button class="chat-fab" id="chatFab" aria-label="Open Nyanzi, the AI assistant">💬 Ask Nyanzi</button>
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Nyanzi AI assistant">
+  <div class="chat-head">
+    <div class="bot-av" aria-hidden="true">🦉</div>
+    <div><h3>Nyanzi</h3><p>Your AI prompt assistant</p></div>
+    <button class="chat-close" id="chatClose" aria-label="Close chat">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-suggest" id="chatSuggest">
+    <button class="chip">How do I use a prompt?</button>
+    <button class="chip">Find me a rubric prompt</button>
+    <button class="chip">Which AI tool is best?</button>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Ask me anything…" aria-label="Type your question">
+    <button class="chat-send" id="chatSend">Send</button>
+  </div>
+</div>
+
+<!-- STATS MODAL -->
+<div class="modal-bg" id="statsModal">
+  <div class="modal" role="dialog" aria-label="Usage statistics">
+    <h3>📊 Usage Dashboard</h3>
+    <p class="note">Counts collected on this site. For production analytics across all visitors, connect Google Analytics (see the GA4 placeholder in the code).</p>
+    <div id="statsList"></div>
+    <button class="btn" id="statsClose">Close</button>
+  </div>
+</div>
+
+<!-- GA4 PLACEHOLDER: when deploying to GitHub Pages, paste your Google Analytics
+     snippet here and replace G-XXXXXXX with your Measurement ID.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); gtag('config', 'G-XXXXXXX');
+</script>
+-->
+
+<script>
+(function(){
+"use strict";
+
+/* ====================================================================
+   ⚙️  SETTINGS — EDIT THESE THREE LINES WHEN YOU DEPLOY
+   --------------------------------------------------------------------
+   Leave a line as "" (empty quotes) to keep that feature turned off.
+   See Ronald's deployment guide for where to get each value.
+   ==================================================================== */
+var CONFIG = {
+  FORMSPREE_ID: "",   // SWAP 1: paste your Formspree form ID, e.g. "xpzgabcd"
+  GA_ID: "",          // SWAP 2: paste your Google Analytics ID, e.g. "G-AB12CD34EF"
+  AI_PROXY_URL: ""    // SWAP 3 (advanced): paste your AI proxy URL, or leave empty
+};
+/* ==================================================================== */
+
+/* ==================== PROMPT DATA ==================== */
+var CATS = [
+  {id:"lesson", name:"📚 Lesson Planning"},
+  {id:"assess", name:"📝 Assessment & Rubrics"},
+  {id:"feedback", name:"💬 Student Feedback"},
+  {id:"diff", name:"🎯 Differentiation"},
+  {id:"parent", name:"📧 Parent Communication"},
+  {id:"research", name:"🔬 Research & Productivity"}
+];
+
+var P = [
+/* ---------- LESSON PLANNING (34) ---------- */
+{c:"lesson",t:"Complete Lesson Plan",p:"Act as an experienced [subject] teacher. Create a 40-minute lesson plan for [grade level] on [topic]. Include a clear learning objective, a 5-minute warm-up, the main activity, a quick formative check, and a closing reflection question. Keep materials simple and low-cost."},
+{c:"lesson",t:"Unit Plan",p:"Design a 3-week unit plan for [grade level] [subject] on [topic]. Break it into weekly goals, daily lesson titles, key vocabulary, one hands-on activity per week, and a final assessment idea."},
+{c:"lesson",t:"Learning Objectives (Bloom's)",p:"Write 5 measurable learning objectives for a lesson on [topic] for [grade level]. Use Bloom's Taxonomy verbs, covering at least three different levels from remembering to creating."},
+{c:"lesson",t:"Warm-Up Activities",p:"Suggest 5 quick warm-up activities (under 5 minutes each) to start a [subject] lesson on [topic] for [grade level]. Each should require no special materials and activate prior knowledge."},
+{c:"lesson",t:"Exit Tickets",p:"Create 6 exit ticket questions for a lesson on [topic] that check student understanding in under 3 minutes. Include a mix of recall, application, and one self-reflection question."},
+{c:"lesson",t:"Group Activity",p:"Design a collaborative group activity for [number] students per group on [topic] for [grade level]. Include clear roles for each group member, step-by-step instructions, time limits, and a simple way to share results with the class."},
+{c:"lesson",t:"Real-World Connections",p:"Give me 5 real-world examples or applications I can use to make [topic] relevant and interesting for [grade level] students, especially examples relatable in [country/region or community type]."},
+{c:"lesson",t:"Lesson Hook",p:"Suggest 5 attention-grabbing ways to open a lesson on [topic] for [grade level] — such as a surprising fact, a short story, a question, a quick demonstration, or a challenge. Explain how each connects to the lesson goal."},
+{c:"lesson",t:"Low-Resource Lesson",p:"Plan an engaging 40-minute lesson on [topic] for [grade level] in a classroom with no projector, internet, or printed handouts — only a chalkboard and exercise books. Include one interactive activity."},
+{c:"lesson",t:"Practical / Lab Activity",p:"Design a safe, hands-on practical activity to teach [concept] to [grade level] using only inexpensive, locally available materials. Include the materials list, steps, expected results, and 3 discussion questions."},
+{c:"lesson",t:"Discussion Questions",p:"Write 8 open-ended discussion questions about [topic] for [grade level], moving from basic comprehension to critical thinking and personal connection. Add a suggested follow-up probe for each."},
+{c:"lesson",t:"Project-Based Learning",p:"Design a 2-week project-based learning experience on [topic] for [grade level]. Include the driving question, milestones, student deliverables, how groups will work, and how the final product will be assessed."},
+{c:"lesson",t:"Review Lesson",p:"Plan a fun, fast-paced review lesson covering [topics] before an exam for [grade level]. Use at least 3 different retrieval activities, such as quick quizzes, peer questioning, or a team game."},
+{c:"lesson",t:"Substitute Teacher Plan",p:"Write a clear substitute teacher plan for my [grade level] [subject] class on [topic]. Include step-by-step instructions a non-specialist can follow, timings, an independent task, and what to do if students finish early."},
+{c:"lesson",t:"Cross-Curricular Lesson",p:"Create a lesson that connects [subject 1] and [subject 2] through the topic of [topic] for [grade level]. Show how each subject's skills are used and include one integrated activity."},
+{c:"lesson",t:"Spaced Practice Schedule",p:"I just taught [topic] to [grade level]. Create a 4-week spaced review schedule with three short retrieval sessions (5-10 minutes each) that revisit the material at increasing intervals. Suggest a quick activity for each session."},
+{c:"lesson",t:"Flipped Classroom",p:"Convert my lesson on [topic] into a flipped model for [grade level]. Outline what students should study at home (assuming limited internet access — suggest offline options), and design the in-class application activities."},
+{c:"lesson",t:"Vocabulary Lesson",p:"Create a vocabulary lesson for these [number] terms from [topic]: [list terms]. Include student-friendly definitions, an example sentence for each, a matching activity, and a quick game to practice them."},
+{c:"lesson",t:"Storytelling Lesson",p:"Turn the concept of [topic] into a short, memorable story or analogy suitable for [grade level], then give me 3 comprehension questions and one activity where students extend or retell the story."},
+{c:"lesson",t:"Classroom Game",p:"Invent a simple classroom game to practice [skill/topic] with [grade level]. It must need no special equipment, work for a class of [number] students, take 15 minutes, and include clear rules and a scoring system."},
+{c:"lesson",t:"Learning Stations",p:"Design 4 learning stations for a lesson on [topic] for [grade level]. Each station should take 10 minutes, target a different skill (reading, writing, discussion, problem-solving), and include simple instructions students can follow independently."},
+{c:"lesson",t:"Pacing Guide",p:"Create a term-long pacing guide for [subject], [grade level], covering these topics: [list topics]. Spread them across [number] weeks, allowing time for review weeks, assessments, and one catch-up week."},
+{c:"lesson",t:"Homework Design",p:"Design a meaningful homework task on [topic] for [grade level] that takes no more than 20 minutes, requires no internet, can involve family or community, and reinforces today's lesson rather than introducing new content."},
+{c:"lesson",t:"Textbook Adaptation",p:"Here is a textbook passage: [paste text]. Turn it into an interactive lesson for [grade level] with a hook, guided questions to use while reading, one activity, and an exit ticket."},
+{c:"lesson",t:"Scheme of Work",p:"Draft a scheme of work for [subject], [grade level], Term [number], based on this syllabus outline: [paste outline]. For each week include the topic, objectives, suggested methods, resources, and assessment."},
+{c:"lesson",t:"Inquiry-Based Lesson",p:"Design an inquiry-based lesson on [topic] for [grade level] where students investigate a question before I explain the concept. Include the central question, materials, investigation steps, and how I'll guide them to the key idea."},
+{c:"lesson",t:"Classroom Debate",p:"Set up a structured classroom debate on [topic/question] for [grade level]. Provide the motion, 4 arguments for each side with supporting points, debate rules and timings, and a reflection task for the audience."},
+{c:"lesson",t:"Revision Timetable",p:"Create a 3-week revision timetable for [grade level] students preparing for [exam] in [subjects]. Use short daily sessions, mix subjects across the week, and build in self-testing rather than re-reading."},
+{c:"lesson",t:"Multimedia Suggestions",p:"Suggest 5 ways to teach [topic] using different formats — diagram, demonstration, role-play, song or chant, and a physical movement activity — for [grade level]. Describe each in 2-3 sentences."},
+{c:"lesson",t:"Outdoor Lesson",p:"Plan an outdoor lesson on [topic] for [grade level] using the school compound or local environment. Include safety considerations, the main activity, and how to connect observations back to the curriculum."},
+{c:"lesson",t:"Lesson Reflection",p:"I just taught a lesson on [topic]. Here's what happened: [describe briefly]. Help me reflect — what likely went well, what could explain the difficulties, and give 3 specific adjustments for next time."},
+{c:"lesson",t:"First Day Plan",p:"Plan my first lesson of the year with a new [grade level] class. Include an icebreaker, how to introduce class expectations positively, a short diagnostic activity for [subject], and a closing that builds excitement."},
+{c:"lesson",t:"Remedial Lesson",p:"Several students failed to grasp [concept]. Design a 30-minute remedial lesson that re-teaches it using a completely different approach from standard instruction, with concrete examples and step-by-step guided practice."},
+{c:"lesson",t:"Micro-Lesson",p:"Create a 10-minute micro-lesson on [specific skill or sub-topic] for [grade level] that I can slot into any class period. Include one explanation, one worked example, and one quick practice task."},
+/* ---------- ASSESSMENT & RUBRICS (33) ---------- */
+{c:"assess",t:"Multiple-Choice Quiz",p:"Create a 10-question multiple-choice quiz on [topic] for [grade level]. Each question needs 4 options with plausible distractors. Provide an answer key with a one-sentence explanation for each correct answer."},
+{c:"assess",t:"Full Exam Paper",p:"Draft a [duration]-minute exam on [topics] for [grade level], worth [total] marks. Include Section A (multiple choice), Section B (short answer), and Section C (one extended response). Show mark allocations and provide a marking guide."},
+{c:"assess",t:"Essay Rubric",p:"Create a 4-level rubric (Excellent, Good, Developing, Beginning) for assessing a [grade level] essay on [topic]. Use these criteria: thesis and argument, evidence, organization, and language mechanics. Write clear descriptors for each level."},
+{c:"assess",t:"Project Rubric",p:"Design a rubric for a [grade level] project on [topic] with criteria for content accuracy, creativity, effort and completeness, and presentation. Use a 1-4 scale with student-friendly descriptors they can understand before starting."},
+{c:"assess",t:"Presentation Rubric",p:"Create a rubric for assessing [grade level] oral presentations on [topic], covering content knowledge, organization, delivery (voice, eye contact), visual aids, and response to questions. Keep it to one page."},
+{c:"assess",t:"Short-Answer Questions",p:"Write 8 short-answer questions on [topic] for [grade level], each answerable in 2-4 sentences. Include a model answer and the key points a correct response must contain for each."},
+{c:"assess",t:"True/False with Justification",p:"Create 10 true/false statements about [topic] for [grade level] where students must also justify their answer in one sentence. Include some statements that are commonly believed but false. Provide the answer key."},
+{c:"assess",t:"Fill-in-the-Blank",p:"Create a 12-item fill-in-the-blank exercise on [topic] for [grade level]. Provide a word bank with 15 words (including 3 distractors) and the answer key."},
+{c:"assess",t:"Matching Exercise",p:"Create a matching exercise on [topic] for [grade level] with 10 terms in column A and definitions or examples in column B, arranged in random order. Include the answer key."},
+{c:"assess",t:"Scenario-Based Questions",p:"Write 5 scenario-based questions on [topic] for [grade level] where students apply the concept to a realistic situation. Make scenarios locally relevant where possible. Provide model answers."},
+{c:"assess",t:"Higher-Order Questions",p:"Generate 6 exam questions on [topic] for [grade level] that target analysis, evaluation, and creation levels of Bloom's Taxonomy — no simple recall. For each, note what a strong answer should demonstrate."},
+{c:"assess",t:"Diagnostic Pre-Test",p:"Create a 10-question diagnostic pre-test to find out what [grade level] students already know about [topic] before I teach it, including 2 questions on prerequisite skills. Keep it low-pressure and tell me what each question reveals."},
+{c:"assess",t:"Formative Check-Ins",p:"Give me 8 quick formative assessment techniques I can use during a lesson on [topic] — each under 3 minutes, requiring no marking afterwards, and giving me instant insight into who is lost."},
+{c:"assess",t:"Peer Assessment Form",p:"Create a simple peer assessment form for [grade level] students to evaluate each other's [type of work] on [topic]. Use 4-5 criteria with a simple rating scale and one sentence-starter for constructive feedback."},
+{c:"assess",t:"Self-Assessment Checklist",p:"Design a self-assessment checklist students can use before submitting their [assignment type] on [topic]. Write items as 'I have…' statements covering content, structure, and presentation requirements."},
+{c:"assess",t:"Practical Exam",p:"Design a practical assessment for [skill/topic] for [grade level], including the task instructions, required materials, time limit, safety notes, and an observation checklist for scoring each student."},
+{c:"assess",t:"Oral Exam Questions",p:"Prepare a set of 12 oral examination questions on [topic] for [grade level], arranged in three difficulty tiers (4 each), with brief notes on what a satisfactory answer includes at each tier."},
+{c:"assess",t:"Improve My Questions",p:"Here are my draft exam questions: [paste questions]. Review them for clarity, fairness, single-best-answer accuracy, and appropriate difficulty for [grade level]. Suggest improved versions with reasons."},
+{c:"assess",t:"Question Bank",p:"Build a bank of 20 questions on [topic] for [grade level], organized by difficulty (easy, medium, hard) and question type, that I can reuse across quizzes, homework, and revision games. Include answers."},
+{c:"assess",t:"Alignment Check",p:"My learning objectives are: [list objectives]. My assessment items are: [paste items]. Check whether each objective is assessed, flag any items that don't match an objective, and suggest items for gaps."},
+{c:"assess",t:"Marking Scheme",p:"Create a detailed marking scheme for this exam question worth [number] marks: [paste question]. Break down exactly how marks are earned, including partial credit, and note common errors that lose marks."},
+{c:"assess",t:"Standards-Based Assessment",p:"Create an assessment for [topic] aligned to this curriculum standard or syllabus objective: [paste standard]. Include 5 items of increasing difficulty and explain how each item measures the standard."},
+{c:"assess",t:"Portfolio Assessment",p:"Design a portfolio assessment plan for [subject], [grade level], over one term. Specify what artifacts students collect, reflection prompts for each, and a rubric for evaluating the complete portfolio."},
+{c:"assess",t:"Exam Review Sheet",p:"Create a one-page exam review sheet for [grade level] covering [topics]. Organize it by topic with key terms, must-know concepts, 2 practice questions per topic, and common mistakes to avoid."},
+{c:"assess",t:"Grading Scale Conversion",p:"Help me set up a fair grading scheme. My assessment components are: [list components and weights]. Show how to calculate final grades, convert to letter grades using [scale], and handle a missing component."},
+{c:"assess",t:"Take-Home Assessment",p:"Design a take-home assessment on [topic] for [grade level] that measures real understanding rather than copying — emphasizing application to personal or local contexts, explanation in their own words, and original examples."},
+{c:"assess",t:"AI-Resistant Tasks",p:"Suggest 5 assessment formats for [topic], [grade level], that remain meaningful even if students have access to AI tools — such as oral defenses, in-class application, process documentation, or local data collection. Describe each briefly."},
+{c:"assess",t:"Open-Book Exam",p:"Create a 5-question open-book exam on [topic] for [grade level] where having the textbook open doesn't give away answers — questions should require application, comparison, and judgment. Include a marking guide."},
+{c:"assess",t:"Group Project Assessment",p:"Design a fair assessment approach for a group project on [topic] that combines a group mark, an individual contribution mark, and peer ratings. Provide the forms and explain how to calculate the final grade."},
+{c:"assess",t:"Alternate Exam Version",p:"Here is my exam: [paste exam]. Create a parallel version with different questions of equal difficulty testing the same objectives, for students sitting a retake or a second session."},
+{c:"assess",t:"Exam Instructions",p:"Write clear, student-friendly exam instructions for a [duration] exam on [subject] for [grade level], covering materials allowed, how to answer each section, time management advice, and academic honesty expectations."},
+{c:"assess",t:"Data-Informed Reteaching",p:"Here are my class results by question: [paste summary]. Identify which concepts students struggled with most, suggest likely misconceptions behind each, and propose a 20-minute reteaching activity for the weakest area."},
+{c:"assess",t:"Rubric Simplifier",p:"Here is my rubric: [paste rubric]. Rewrite it in simple, student-friendly language for [grade level] so students can self-check their work against it before submission, keeping the same criteria and levels."},
+/* ---------- STUDENT FEEDBACK (33) ---------- */
+{c:"feedback",t:"Essay Feedback",p:"Here is a [grade level] student's essay on [topic]: [paste essay]. Give constructive feedback with 2 specific strengths, 2 priority improvements with examples of how to fix them, and an encouraging closing comment."},
+{c:"feedback",t:"Report Card Comments",p:"Write report card comments for a [grade level] student in [subject] who [describe performance]. Keep it 3-4 sentences: one strength, one growth area, one next step. Professional, warm, and specific — no clichés."},
+{c:"feedback",t:"Batch Report Comments",p:"Generate report card comment templates for [subject], [grade level], for five performance levels: outstanding, above average, average, below average, and struggling. Each 3 sentences, with [name] placeholders, sounding personal rather than generic."},
+{c:"feedback",t:"Encouraging a Struggling Student",p:"Write feedback for a [grade level] student who is struggling with [skill/topic] but trying hard. Acknowledge effort genuinely, name one concrete improvement they've made, and give one small, achievable next step."},
+{c:"feedback",t:"Stretching a High Achiever",p:"Write feedback for a high-performing [grade level] student in [subject] that goes beyond 'great job' — identify what specifically makes their work strong and challenge them with a meaningful next-level goal."},
+{c:"feedback",t:"Growth-Mindset Rewording",p:"Rewrite these feedback comments using growth-mindset language that focuses on strategy and effort rather than fixed ability: [paste comments]. Keep them honest — don't inflate weak work."},
+{c:"feedback",t:"Rubric-Referenced Comments",p:"Using this rubric: [paste rubric], write feedback for a student who scored [scores per criterion]. Reference the rubric language, explain why they earned each level, and state exactly what would move them up one level."},
+{c:"feedback",t:"Feedback Sandwich Alternative",p:"Write direct but kind feedback on this student work: [paste/describe work]. Skip the formulaic praise sandwich — open with the work's purpose, address the most important issue clearly, and end with a specific, doable action."},
+{c:"feedback",t:"Late Work Conversation",p:"Help me prepare a short, supportive conversation script with a [grade level] student who repeatedly submits work late. It should explore causes without interrogating, restate expectations, and agree on one practical change."},
+{c:"feedback",t:"Improvement Plan",p:"Create a simple 4-week improvement plan for a [grade level] student weak in [skill]. Include one focus per week, a 15-minute practice task per week, and how we'll both know they're improving."},
+{c:"feedback",t:"Goal-Setting Conference",p:"Give me a 10-minute goal-setting conference structure for meeting individually with [grade level] students about their progress in [subject], including 5 questions to ask, and a simple goal template the student fills in."},
+{c:"feedback",t:"Peer Feedback Starters",p:"Create 10 sentence starters that help [grade level] students give each other kind, specific, and useful feedback on [type of work] — e.g., 'One thing that worked well was… because…'. Include 2 starters for asking clarifying questions."},
+{c:"feedback",t:"Verbal Feedback Script",p:"I want to give quick verbal feedback to a student on their [work type] about [issue]. Draft 3 versions of what I could say in under 30 seconds: one encouraging, one direct, and one that uses a question to prompt self-correction."},
+{c:"feedback",t:"Quick Comment Bank",p:"Create a bank of 20 short written comments (5-12 words each) I can use when marking [grade level] [subject] exercise books — 7 praising specific strengths, 7 flagging common errors with a hint, and 6 prompting deeper thinking."},
+{c:"feedback",t:"Writing Feedback",p:"Review this [grade level] student's writing: [paste text]. Focus only on [focus area, e.g., paragraph structure]. Point out 2 places it's done well and 2 places to improve, quoting their own words, and model one corrected example."},
+{c:"feedback",t:"Math Error Analysis",p:"A student solved this problem incorrectly: [paste problem and student work]. Identify the exact misconception, explain it in student-friendly language, and write feedback that guides them to find and fix the error themselves."},
+{c:"feedback",t:"Presentation Feedback",p:"Write feedback for a [grade level] student's presentation on [topic]. Their delivery: [describe]. Cover content, organization, and delivery, with one strength and one improvement for each, phrased to build confidence."},
+{c:"feedback",t:"Group Work Feedback",p:"Write feedback for a group of [grade level] students who completed [project] together. Address the group's collective strengths and one team-process improvement, then add a note on how to share individual feedback fairly."},
+{c:"feedback",t:"Re-Engagement Note",p:"Write a short, private note to a [grade level] student whose effort and participation have dropped recently. It should express that I've noticed and I care, name something they're good at, and invite a conversation — without sounding alarmed or accusatory."},
+{c:"feedback",t:"Progress Letter to Student",p:"Write a mid-term progress letter directly to a [grade level] student summarizing their performance in [subject]: [describe]. Use 'you' language, celebrate genuine progress, be honest about gaps, and end with 2 specific actions for the rest of term."},
+{c:"feedback",t:"Feedback on Revisions",p:"A student revised their work based on my earlier feedback. Original issues: [list]. Their revision: [paste/describe]. Write feedback that acknowledges exactly which improvements they made and identifies what still needs attention."},
+{c:"feedback",t:"Language-Sensitive Feedback",p:"Write feedback for a student learning in [language] as a second language, on their [work type]. Separate feedback about ideas (which are strong: [describe]) from feedback about language errors, so they see their thinking is valued."},
+{c:"feedback",t:"Positive Note Home",p:"Write a short positive note I can send home about [student name], who did something great this week: [describe]. 3-4 sentences, specific, joyful, and easy for any family member to read."},
+{c:"feedback",t:"End-of-Term Summary",p:"Write an end-of-term feedback summary for a [grade level] student in [subject]. Their journey this term: [describe]. Summarize growth, current level, and 2 priorities for next term in a warm, professional tone."},
+{c:"feedback",t:"Student Self-Reflection Prompts",p:"Create 8 self-reflection questions [grade level] students answer after receiving back their marked [assessment type] — guiding them to understand their errors, recognize progress, and plan one study change."},
+{c:"feedback",t:"Feedback for a Shy Student",p:"Write feedback for a quiet [grade level] student whose written work is strong but who rarely participates aloud. Affirm their written strengths and gently encourage one low-pressure way to share their thinking."},
+{c:"feedback",t:"Project Feedback",p:"Write feedback on a [grade level] student's project on [topic]. What they produced: [describe]. Comment on research quality, creativity, and presentation, naming one standout element and one concrete upgrade."},
+{c:"feedback",t:"Exam Debrief",p:"Help me write a whole-class exam debrief for [subject]. Class performance: [summarize]. Include what the class did well, the 3 most common errors with corrections, and a positive framing for students who scored poorly."},
+{c:"feedback",t:"Celebrating Improvement",p:"Write feedback for a student who moved from [previous level] to [current level] in [subject]. Make the size of their improvement vivid and concrete, credit the specific habits that caused it, and set one stretch goal."},
+{c:"feedback",t:"Behavior Feedback",p:"Help me give feedback to a [grade level] student about [behavior issue] that separates the behavior from the person, explains its impact on their learning and others, and agrees on one specific replacement behavior."},
+{c:"feedback",t:"Homework Feedback Routine",p:"Design a sustainable feedback routine for daily homework in a class of [number] students that doesn't require marking every book every day — combining self-marking, sampling, and whole-class error review. Explain the weekly cycle."},
+{c:"feedback",t:"Effort vs. Outcome Feedback",p:"A student worked very hard on [task] but the result is weak: [describe]. Write feedback that honors the effort honestly, identifies why the outcome fell short, and redirects their effort toward a more effective strategy."},
+{c:"feedback",t:"Audio Feedback Script",p:"Write a 60-second spoken feedback script I can record (or read aloud) for a student about their [work type] on [topic]. Performance: [describe]. Conversational tone, one strength, one improvement, one encouragement."},
+/* ---------- DIFFERENTIATION (34) ---------- */
+{c:"diff",t:"Tiered Activity",p:"Create a tiered activity on [topic] for [grade level] with three versions: support level (more scaffolding), core level, and challenge level. All three should target the same learning objective. Describe each version."},
+{c:"diff",t:"Simplify a Text",p:"Simplify this text for students reading below [grade level]: [paste text]. Use shorter sentences and common words, keep all key ideas, and add a 3-word glossary. Then provide 3 comprehension questions."},
+{c:"diff",t:"Extension for Advanced Learners",p:"My lesson on [topic] is too easy for some [grade level] students. Design 3 extension tasks that deepen rather than just add more work — involving analysis, creation, or teaching others. No extra marking burden if possible."},
+{c:"diff",t:"Scaffolded Worksheet",p:"Create a scaffolded worksheet on [topic] for [grade level] that starts with a fully worked example, then a partially completed problem, then guided questions, and finally independent problems. Gradually remove support."},
+{c:"diff",t:"Language Learner Adaptation",p:"Adapt this lesson on [topic] for students still developing proficiency in [language of instruction]: [describe lesson]. Suggest visuals, sentence frames, key vocabulary pre-teaching, and ways they can show understanding with limited language."},
+{c:"diff",t:"Dyslexia-Friendly Materials",p:"Rewrite this material to be friendlier for students with dyslexia: [paste text]. Use short paragraphs, clear structure, bullet points where helpful, and suggest formatting choices (font, spacing, layout) for the printed version."},
+{c:"diff",t:"Focus & Attention Strategies",p:"Give me 8 practical strategies to help students who struggle to maintain attention during a [duration] lesson on [topic] — including movement breaks, chunked instructions, and clear visual routines. Make them workable in a class of [number]."},
+{c:"diff",t:"Visual Supports",p:"Describe 5 visual supports I can draw on the chalkboard or make from paper to help [grade level] students understand [topic] — such as diagrams, flow charts, or graphic organizers. Explain what to include in each."},
+{c:"diff",t:"Sentence Frames",p:"Create 10 sentence frames to help [grade level] students discuss and write about [topic] — e.g., 'I predict that… because…'. Range from simple to complex so different students can choose their level."},
+{c:"diff",t:"Choice Board",p:"Design a 9-option choice board for [topic], [grade level], where students pick how to demonstrate learning — mixing writing, drawing, speaking, building, and performing options. All options must show the same core understanding."},
+{c:"diff",t:"Graphic Organizer",p:"Design a graphic organizer to help [grade level] students structure their thinking about [topic/task]. Describe its layout clearly enough that I can draw it on the board, and explain how to model its use the first time."},
+{c:"diff",t:"Leveled Questions",p:"For a class discussion on [topic], write 12 questions in three levels: 4 confidence-building questions every student can answer, 4 core questions, and 4 stretch questions — so I can direct the right question to the right student."},
+{c:"diff",t:"Chunked Content",p:"Break this complex topic into small, sequenced chunks for [grade level]: [topic]. For each chunk, give a mini-explanation, one check-for-understanding question, and the signal that students are ready for the next chunk."},
+{c:"diff",t:"Pre-Teaching Plan",p:"Some students will struggle with tomorrow's lesson on [topic]. Design a 15-minute pre-teaching session for a small group covering the key vocabulary and one foundational concept, so they enter the main lesson prepared."},
+{c:"diff",t:"Multi-Sensory Activity",p:"Design a multi-sensory way to teach [concept] to [grade level] combining seeing, hearing, movement, and touch — using only materials available in a typical low-resource classroom."},
+{c:"diff",t:"Individual Support Plan",p:"Help me draft classroom strategies for a student who [describe learning need or documented support plan]. Suggest seating, instruction, task, and assessment adjustments I can realistically manage alongside the whole class."},
+{c:"diff",t:"Extra Processing Time",p:"Suggest 6 ways to give students who process slowly more thinking time without singling them out — in questioning, written tasks, and assessments — for a [grade level] class of [number] students."},
+{c:"diff",t:"Enrichment Project",p:"Design an independent enrichment project on [topic] for a [grade level] student who has mastered the curriculum content — with a guiding question, milestones they manage themselves, and a light-touch check-in plan for me."},
+{c:"diff",t:"Alternative Assessment",p:"A student with [need/barrier] cannot meaningfully complete the standard [assessment type] on [topic]. Suggest 3 alternative ways they can demonstrate the same learning objectives, with a simple scoring approach for each."},
+{c:"diff",t:"Three Reading Levels",p:"Rewrite this passage at three reading levels (below grade, at grade, above grade) for [grade level]: [paste passage]. Keep the same key information in all three so the whole class can discuss it together afterwards."},
+{c:"diff",t:"Math Problem Ladder",p:"Create a ladder of 8 math problems on [concept] that climb from very basic to challenging, where each step adds one new element of difficulty. Mark the 'everyone must reach' step and the 'challenge' steps."},
+{c:"diff",t:"Oral Alternatives to Writing",p:"Suggest 6 ways students who struggle with writing can demonstrate their understanding of [topic] orally or visually, with quick rubric criteria for assessing each fairly against the written alternative."},
+{c:"diff",t:"Peer Support Structure",p:"Design a peer support (study buddy) structure for my [grade level] class to help with [subject], including how to pair students thoughtfully, what helpers should and shouldn't do, and how to ensure the stronger student also benefits."},
+{c:"diff",t:"Small-Group Intervention",p:"Plan a 20-minute small-group intervention session for 5 [grade level] students who are behind in [skill], while the rest of the class works independently. Include the independent task for the others and the guided activity for the group."},
+{c:"diff",t:"Differentiated Stations",p:"Design 3 learning stations on [topic] at three difficulty levels, plus a system for assigning students to stations based on a quick pre-check — that allows movement between levels without stigma."},
+{c:"diff",t:"Adult Learner Adaptation",p:"Adapt this content for adult learners with limited formal schooling: [topic/material]. Connect it to their work and life experience, minimize text density, and build in discussion and practical application."},
+{c:"diff",t:"Curriculum Compacting",p:"A student already knows most of [unit topic]. Show me how to compact the curriculum: a quick pre-assessment to confirm mastery, which parts they can skip, and what meaningful alternative work fills that time."},
+{c:"diff",t:"Positive Behavior Plan",p:"Help me design a positive behavior support approach for a [grade level] student who [describe behavior]. Identify likely triggers, prevention strategies, replacement behaviors to teach, and how to respond consistently when it occurs."},
+{c:"diff",t:"Test Anxiety Support",p:"Suggest classroom and assessment adjustments for [grade level] students with severe test anxiety — covering preparation routines, the test environment, question design, and 3 calming strategies to teach the whole class."},
+{c:"diff",t:"Large Class Differentiation",p:"I teach a class of [number, e.g., 80+] students at [grade level]. Give me 6 realistic differentiation strategies that work at this scale — like tiered tasks, strategic seating, peer systems, and rotating teacher focus groups."},
+{c:"diff",t:"Multi-Grade Classroom",p:"I teach a combined class of [grade levels] in one room. Help me plan a lesson on [broad topic] with a shared opening, level-specific tasks for each grade, and a way to manage my attention between groups."},
+{c:"diff",t:"No-Tech Adaptation",p:"This activity assumes computers or internet: [describe activity]. Redesign it to achieve the same learning objective using only paper, chalkboard, and discussion, for a [grade level] class."},
+{c:"diff",t:"UDL Lesson Check",p:"Review my lesson plan against Universal Design for Learning principles: [paste plan]. Identify where I offer (or could offer) multiple means of engagement, representation, and expression, and suggest one practical improvement for each."},
+{c:"diff",t:"Simplified Instructions",p:"Rewrite these task instructions so every student, including struggling readers, can follow them independently: [paste instructions]. Use numbered steps, one action per step, simple words, and bold the key verbs."},
+/* ---------- PARENT COMMUNICATION (33) ---------- */
+{c:"parent",t:"Positive Progress Email",p:"Write a warm, professional email to a parent about their child's progress in [subject]. The student improved in [strength] but still needs support with [growth area]. Suggest one simple way to help at home. Under 150 words."},
+{c:"parent",t:"Raising a Concern",p:"Write an email to a parent raising a concern about their child's [issue: academic/behavioral/attendance] without alarming or blaming. State the facts neutrally, what I'm doing in class, and invite them to talk. Caring but honest."},
+{c:"parent",t:"Class Newsletter",p:"Write a one-page monthly newsletter for parents of my [grade level] class covering: what we learned ([topics]), upcoming events ([list]), a learning tip for home, and a celebration of class achievements. Friendly and skimmable."},
+{c:"parent",t:"Welcome Letter",p:"Write a beginning-of-year welcome letter to parents of my new [grade level] class. Introduce me briefly ([1-2 facts]), share my approach and expectations positively, explain how to contact me, and express genuine excitement."},
+{c:"parent",t:"Conference Invitation",p:"Write an invitation to parents for parent-teacher conferences on [date]. Explain the purpose positively (partnership, not problems), what to expect, how long meetings last, and how to book a time slot."},
+{c:"parent",t:"Conference Talking Points",p:"Help me prepare for a conference with the parents of a student who [describe situation]. Give me an opening that builds trust, 3 key points with evidence, anticipated parent concerns with responses, and a collaborative closing."},
+{c:"parent",t:"Behavior Incident Report",p:"Write a factual, calm message to a parent about a behavior incident today: [describe incident]. State what happened without editorializing, the school's response, the support plan going forward, and an invitation to discuss."},
+{c:"parent",t:"Attendance Concern",p:"Write a caring letter to a parent whose child has missed [number] days this term. Express concern for the child (not accusation), explain the learning impact concretely, ask if there are barriers we can help with, and offer a conversation."},
+{c:"parent",t:"Homework Support Guide",p:"Write a short guide for parents on supporting [grade level] homework in [subject] — even if they don't know the subject themselves. Focus on routines, environment, encouragement, and what NOT to do (like doing it for them)."},
+{c:"parent",t:"Missing Work Notice",p:"Write a brief, neutral message to a parent listing their child's missing assignments in [subject]: [list]. Include due dates for makeup work, where to find the materials, and a supportive closing — no shaming."},
+{c:"parent",t:"Celebrating Success",p:"Write a short message to a parent celebrating their child's recent achievement: [describe]. Be specific about what the child did and the qualities it shows. 4-5 sentences of genuine, non-generic praise."},
+{c:"parent",t:"Sensitive News",p:"Help me write a message to parents about a sensitive situation: [describe]. It must be honest, calm, and compassionate, explain what support the school is providing, and tell parents how they can help their child at home."},
+{c:"parent",t:"Plain-Language Version",p:"Rewrite this school communication in very simple language for parents with limited literacy or limited [language] proficiency: [paste text]. Short sentences, no jargon, and bold the key actions and dates."},
+{c:"parent",t:"Event Invitation",p:"Write an inviting announcement for [school event] on [date]. Include what it is, why it matters for their child, logistics (time, place, what to bring), and a warm encouragement to attend. Keep it under 120 words."},
+{c:"parent",t:"Volunteer Request",p:"Write a request asking parents to volunteer for [activity/need]. Explain the impact on students, the specific tasks and time commitment, reassure them no special skills are needed, and make signing up easy."},
+{c:"parent",t:"Narrative Report Comment",p:"Write a 5-6 sentence narrative report comment for a parent about their child's term in [subject]. Performance: [describe]. Balance honesty about gaps with genuine recognition of growth, ending with how home and school can work together."},
+{c:"parent",t:"Fee/Supplies Reminder",p:"Write a respectful reminder to parents about [outstanding fees/required supplies] that is dignified and assumes good faith — acknowledging that times can be hard, stating what's needed and by when, and offering a confidential way to discuss difficulties."},
+{c:"parent",t:"Reading at Home Guide",p:"Write a simple one-page guide for parents on building a reading habit at home with a [age] year old — including what to do if there are few books at home and if the parent's own reading is limited. Practical and encouraging."},
+{c:"parent",t:"Exam Preparation Letter",p:"Write a letter to parents of [grade level] students before [exam], explaining how they can genuinely help: sleep, meals, a quiet study spot, encouragement, and reduced pressure — plus the exam timetable: [dates]."},
+{c:"parent",t:"Transition Letter",p:"Write a letter to parents whose children are transitioning to [new grade/school level], explaining what will change, how children typically react, how to support them through the change, and what the school is doing to ease the move."},
+{c:"parent",t:"Bullying Response",p:"Help me write to the parent of a child involved in a bullying situation as [the target / the child who bullied]. Details: [describe]. Be factual and compassionate, explain the school's actions, and focus on moving forward constructively."},
+{c:"parent",t:"Technology & AI Use Letter",p:"Write a letter to parents explaining how our class uses [technology/AI tools] for learning, addressing common worries (screen time, cheating, safety), the boundaries we set, and how parents can reinforce healthy habits at home."},
+{c:"parent",t:"Permission Slip",p:"Write a permission form for a [grade level] trip to [destination] on [date]. Include the educational purpose, departure/return times, transport, cost, what to bring, supervision details, and a clear signature section with emergency contact."},
+{c:"parent",t:"Parent Survey",p:"Create a short parent survey (8 questions, mostly multiple choice) to learn how families experience our class communication and how their children talk about school at home. Include one open question. Easy to answer in 5 minutes."},
+{c:"parent",t:"Re-Engaging a Parent",p:"A parent has not responded to several messages about their child, who needs support with [issue]. Write a fresh message with a different, warmer approach — short, pressure-free, leading with something positive about the child, and offering flexible ways to connect."},
+{c:"parent",t:"Short SMS/WhatsApp Updates",p:"Write 6 short message templates (under 50 words each, suitable for SMS or WhatsApp) for common parent updates: positive note, homework reminder, absence check-in, event reminder, meeting request, and exam results notice."},
+{c:"parent",t:"Responding to an Upset Parent",p:"A parent sent me this upset message: [paste message]. Draft a calm, professional reply that acknowledges their feelings, addresses the facts without being defensive, and moves toward a constructive next step or meeting."},
+{c:"parent",t:"Grade Dispute Response",p:"A parent is disputing their child's grade on [assessment]. Write a response that explains how the grade was determined (rubric/marking scheme), offers to walk through the work together, and outlines the formal review option — respectful and non-defensive."},
+{c:"parent",t:"Support Meeting Invitation",p:"Write an invitation to parents for a meeting about additional learning support for their child, who [describe need]. Frame it positively as planning for success, not labeling, explain who will attend and what will be discussed, and reassure them of their central role."},
+{c:"parent",t:"Holiday Learning Tips",p:"Write a cheerful end-of-term note to parents with 5 easy, free ways to keep [grade level] children learning during the holidays — through play, household tasks, stories, and community — without formal study pressure."},
+{c:"parent",t:"Classroom Expectations Letter",p:"Write a letter to parents outlining my classroom expectations for [grade level] — covering behavior, homework, materials, and communication — framed positively as how we'll work together, not as a list of rules and punishments."},
+{c:"parent",t:"Thank-You Note",p:"Write a sincere thank-you note to a parent who [describe what they did]. Specific about the impact, warm, and 3-4 sentences."},
+{c:"parent",t:"New Teacher Introduction",p:"I'm taking over [grade level] [subject] mid-year from another teacher. Write an introduction letter to parents that acknowledges the transition, introduces me credibly, reassures continuity, and invites them to reach out."},
+/* ---------- RESEARCH & PRODUCTIVITY (33) ---------- */
+{c:"research",t:"Summarize an Article",p:"Summarize this article for a busy educator: [paste text or main points]. Give me the core argument in 2 sentences, 3-5 key findings, and 2 practical implications for classroom teaching."},
+{c:"research",t:"Literature Themes",p:"I'm reviewing literature on [topic]. Here are summaries of [number] sources: [paste]. Identify the major themes across them, points of agreement and disagreement, and gaps that remain unexplored."},
+{c:"research",t:"Professional Email",p:"Write a professional email to [recipient/role] about [purpose]. Key points: [list]. Clear subject line, concise body under 150 words, polite but direct, with a specific request or next step."},
+{c:"research",t:"Meeting Agenda",p:"Create an agenda for a [duration] [type of meeting, e.g., department meeting] about [main purpose]. Items to cover: [list]. Assign realistic time blocks, note who leads each item, and end with action-point review."},
+{c:"research",t:"Meeting Minutes",p:"Turn these rough meeting notes into clean, professional minutes: [paste notes]. Organize by agenda item with decisions made, action points (who, what, by when), and items deferred."},
+{c:"research",t:"Grant Proposal Outline",p:"Help me outline a grant proposal for [project] seeking [amount] from [funder type]. Structure: problem statement, objectives, activities, beneficiaries, budget categories, timeline, and how we'll measure impact. Draft 2-3 sentences per section."},
+{c:"research",t:"Professional Development Plan",p:"Create a 12-month professional development plan for me as a [role] wanting to grow in [area]. Include quarterly goals, free or low-cost learning resources, practice opportunities, and how to document growth."},
+{c:"research",t:"Policy Document Summary",p:"Summarize this education policy document for teachers: [paste text/key sections]. What does it require us to do differently, by when, and what stays the same? Plain language, bullet-free prose, under 300 words."},
+{c:"research",t:"Class Data Interpretation",p:"Here are my class assessment results: [paste data summary]. Help me interpret them — overall performance pattern, which subgroups or topics stand out, possible explanations, and 3 evidence-informed actions to take."},
+{c:"research",t:"Survey Design",p:"Design a [number]-question survey to investigate [research question] among [population]. Mix Likert-scale and open items, avoid leading questions, order items logically, and include a brief consent statement."},
+{c:"research",t:"Brainstorm Ideas",p:"Brainstorm 15 ideas for [challenge/goal, e.g., improving attendance in my school]. Organize them from easiest to hardest to implement, and flag the 3 with the best effort-to-impact ratio."},
+{c:"research",t:"Presentation Outline",p:"Outline a [duration] presentation on [topic] for [audience]. Give me a slide-by-slide structure with the key message per slide, one engagement moment for the audience, and a strong opening and closing."},
+{c:"research",t:"Research to Practice",p:"Explain the research on [topic, e.g., retrieval practice] in plain language for classroom teachers — what the evidence says, what it means practically, and 3 ways to apply it tomorrow with zero budget."},
+{c:"research",t:"APA Reference Help",p:"Show me how to reference these sources in APA 7th edition: [paste source details]. Provide both the reference list entry and the in-text citation format for each, and note any missing information I need to find."},
+{c:"research",t:"Conference Abstract",p:"Draft a 250-word conference abstract for my work on [topic/project]. Key points: [purpose, methods/approach, findings/outcomes, significance]. Academic but readable, with a title that would attract practitioners."},
+{c:"research",t:"Reflective Journal Entry",p:"Guide me through a structured reflection on [recent professional experience]. Ask me one question at a time covering: what happened, what went well and why, what I'd change, and what this means for my practice going forward."},
+{c:"research",t:"Weekly Time Plan",p:"Help me build a realistic weekly schedule. My fixed commitments: [list teaching hours and duties]. My recurring tasks: [marking, planning, etc.]. Protect time for [priority], batch similar tasks, and include genuine rest."},
+{c:"research",t:"Term Admin Checklist",p:"Create a comprehensive administrative checklist for a [role] at the [start/end] of term — covering records, reports, classroom setup or closure, communication, and handover items — organized by week."},
+{c:"research",t:"Formal Report",p:"Help me write a [type] report for [audience] about [subject]. Information to include: [paste notes]. Structure it with a summary, background, findings, and recommendations, in formal but clear language."},
+{c:"research",t:"Curriculum Mapping",p:"Help me map my [subject] curriculum for [grade level] across the year. Topics: [list]. Show the logical sequence, where skills build on each other, where topics connect across terms, and natural points for major assessments."},
+{c:"research",t:"Compare Teaching Strategies",p:"Compare [strategy A] and [strategy B] for teaching [topic/skill]: what each involves, what evidence supports each, classroom demands, and which situations favor one over the other. End with a balanced recommendation for my context: [describe]."},
+{c:"research",t:"Action Research Plan",p:"Help me design a small action research project in my own classroom on [question/problem]. Outline the intervention, what data to collect (before and after), a realistic timeline within one term, and ethical considerations with my students."},
+{c:"research",t:"CV Bullet Improvement",p:"Improve these CV bullet points for a [target role] application: [paste bullets]. Make each start with a strong verb, include scale or numbers where possible, and emphasize outcomes over duties."},
+{c:"research",t:"Recommendation Letter",p:"Write a recommendation letter for [student/colleague name] applying for [opportunity]. Our relationship: [context]. Their strengths with examples: [list]. Specific and credible, around 350 words, on a positive but honest note."},
+{c:"research",t:"Course Syllabus",p:"Draft a syllabus for my course [course title] for [level/audience]. Include course description, learning outcomes, weekly topic schedule for [number] weeks, assessment plan with weights, required materials, and key policies."},
+{c:"research",t:"Course Description",p:"Write a compelling 100-150 word course description for [course title], aimed at [audience]. Convey what they'll learn, how it's taught, and why it matters for their goals — informative, not salesy."},
+{c:"research",t:"Documentation for Review",p:"Help me prepare documentation for [accreditation/inspection/appraisal]. The requirement: [paste criteria]. Draft how I can evidence each criterion from my existing practice: [describe what I do], and flag any gaps to address."},
+{c:"research",t:"Resource Inventory",p:"Create an organized inventory template for [classroom/department] resources — categories, condition tracking, quantity, location, and a simple borrowing log — that one person can maintain in under 15 minutes a week."},
+{c:"research",t:"Duty Roster",p:"Create a fair [duration] duty roster for [number] staff covering these duties: [list]. Balance the load, avoid giving anyone consecutive unpopular slots, and make it easy to swap shifts with a simple rule."},
+{c:"research",t:"School Improvement Ideas",p:"Our school wants to improve [area, e.g., literacy outcomes]. Current situation: [describe]. Suggest 5 evidence-informed initiatives ranked by cost, with quick wins separated from long-term changes, and one way to measure each."},
+{c:"research",t:"Professional Bio",p:"Write a professional bio for me in 3 lengths (50, 100, and 200 words) based on: [paste background details]. For use in [context, e.g., conference program, LinkedIn]. Third person, confident without exaggeration."},
+{c:"research",t:"Workshop Plan",p:"Design a [duration] workshop for [audience] on [topic]. Include learning outcomes, a session-by-session breakdown with interactive activities (not just lecture), materials needed, and a feedback form with 5 questions."},
+{c:"research",t:"Stay-Current Digest",p:"Act as my research assistant. Summarize the most important recent developments in [field/topic] that a practicing educator should know — explain each in 2-3 sentences and why it matters for classrooms like mine: [describe context]."}
+];
+
+/* ==================== ANALYTICS ==================== */
+var STORAGE_KEY = "pv-analytics-v1";
+var analytics = {visits:0, signups:0, copies:0, downloads:0, chat_messages:0, faq_opens:0, copies_by_cat:{}};
+var storageOK = false;
+
+function loadAnalytics(){
+  return new Promise(function(resolve){
+    if(window.storage && window.storage.get){
+      window.storage.get(STORAGE_KEY).then(function(r){
+        if(r && r.value){ try{ analytics = JSON.parse(r.value); }catch(e){} }
+        storageOK = true; resolve();
+      }).catch(function(){ storageOK = true; resolve(); });
+    } else { resolve(); }
+  });
+}
+function saveAnalytics(){
+  if(storageOK && window.storage && window.storage.set){
+    try{ window.storage.set(STORAGE_KEY, JSON.stringify(analytics)); }catch(e){}
+  }
+}
+function track(event, meta){
+  if(analytics[event] !== undefined) analytics[event]++;
+  if(event === "copies" && meta){
+    analytics.copies_by_cat[meta] = (analytics.copies_by_cat[meta]||0)+1;
+  }
+  saveAnalytics();
+  /* GA4 hook — fires automatically once you add your GA snippet */
+  if(typeof gtag === "function"){ gtag("event", event, meta ? {category: meta} : {}); }
+}
+
+/* Stats modal */
+var statsModal = document.getElementById("statsModal");
+document.getElementById("statsLink").addEventListener("click", function(){
+  var catName = function(id){ var c = CATS.find(function(x){return x.id===id;}); return c?c.name:id; };
+  var rows = [
+    ["Page visits", analytics.visits],
+    ["Signups", analytics.signups],
+    ["Prompts copied", analytics.copies],
+    ["Library downloads", analytics.downloads],
+    ["Nyanzi chat messages", analytics.chat_messages],
+    ["FAQ opens", analytics.faq_opens]
+  ];
+  var html = rows.map(function(r){ return '<div class="stat-row"><span>'+r[0]+'</span><strong>'+r[1]+'</strong></div>'; }).join("");
+  var cats = Object.keys(analytics.copies_by_cat);
+  if(cats.length){
+    html += '<div class="stat-row" style="border:none;margin-top:.5rem"><span style="font-weight:700">Copies by category</span></div>';
+    cats.forEach(function(c){ html += '<div class="stat-row"><span>'+catName(c)+'</span><strong>'+analytics.copies_by_cat[c]+'</strong></div>'; });
+  }
+  document.getElementById("statsList").innerHTML = html;
+  statsModal.classList.add("open");
+});
+document.getElementById("statsClose").addEventListener("click", function(){ statsModal.classList.remove("open"); });
+statsModal.addEventListener("click", function(e){ if(e.target === statsModal) statsModal.classList.remove("open"); });
+
+/* ==================== VAULT RENDERING ==================== */
+var unlocked = false;
+var activeCat = "all";
+var searchTerm = "";
+
+function renderFilters(){
+  var wrap = document.getElementById("catFilters");
+  var html = '<button class="cat-btn active" data-cat="all">All (200)</button>';
+  CATS.forEach(function(c){
+    var n = P.filter(function(p){return p.c===c.id;}).length;
+    html += '<button class="cat-btn" data-cat="'+c.id+'">'+c.name+' ('+n+')</button>';
+  });
+  wrap.innerHTML = html;
+  wrap.addEventListener("click", function(e){
+    var b = e.target.closest(".cat-btn"); if(!b) return;
+    activeCat = b.dataset.cat;
+    wrap.querySelectorAll(".cat-btn").forEach(function(x){ x.classList.toggle("active", x===b); });
+    renderPrompts();
+  });
+}
+
+function renderPrompts(){
+  var grid = document.getElementById("promptGrid");
+  var catName = function(id){ var c = CATS.find(function(x){return x.id===id;}); return c?c.name:id; };
+  var list = P.filter(function(p){
+    var okCat = activeCat==="all" || p.c===activeCat;
+    var okSearch = !searchTerm || (p.t+" "+p.p).toLowerCase().indexOf(searchTerm) !== -1;
+    return okCat && okSearch;
+  });
+  document.getElementById("vaultCount").textContent = "Showing "+list.length+" of "+P.length+" prompts";
+  grid.innerHTML = list.map(function(p,i){
+    return '<div class="p-card'+(i%2?' alt':'')+'">'+
+      '<span class="tag">'+catName(p.c)+'</span>'+
+      '<h4>'+p.t+'</h4>'+
+      '<p class="ptext">'+p.p+'</p>'+
+      '<button class="copy-btn" data-cat="'+p.c+'" data-text="'+encodeURIComponent(p.p)+'">📋 Copy</button>'+
+    '</div>';
+  }).join("");
+}
+
+document.getElementById("searchBox").addEventListener("input", function(e){
+  searchTerm = e.target.value.trim().toLowerCase();
+  renderPrompts();
+});
+
+document.getElementById("promptGrid").addEventListener("click", function(e){
+  var btn = e.target.closest(".copy-btn"); if(!btn) return;
+  var text = decodeURIComponent(btn.dataset.text);
+  function done(){
+    var o = btn.innerHTML; btn.innerHTML = "✓ Copied!"; btn.classList.add("copied");
+    setTimeout(function(){ btn.innerHTML = o; btn.classList.remove("copied"); }, 1800);
+  }
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(function(){ fallbackCopy(text, done); });
+  } else { fallbackCopy(text, done); }
+  track("copies", btn.dataset.cat);
+});
+
+function fallbackCopy(text, cb){
+  var ta = document.createElement("textarea");
+  ta.value = text; ta.style.position="fixed"; ta.style.opacity="0";
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand("copy"); }catch(e){}
+  document.body.removeChild(ta); cb();
+}
+
+/* Download */
+document.getElementById("downloadBtn").addEventListener("click", function(){
+  var catName = function(id){ var c = CATS.find(function(x){return x.id===id;}); return c?c.name.replace(/^\S+\s/,''):id; };
+  var out = "THE EDUCATOR'S AI PROMPT VAULT\nCreated by Ronald Nyanzi\n" + "=".repeat(50) + "\n\n";
+  CATS.forEach(function(c){
+    out += "\n##### " + c.name.toUpperCase() + " #####\n\n";
+    P.filter(function(p){return p.c===c.id;}).forEach(function(p,i){
+      out += (i+1) + ". " + p.t + "\n" + p.p + "\n\n";
+    });
+  });
+  var blob = new Blob([out], {type:"text/plain"});
+  var a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "educators-ai-prompt-vault.txt";
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(function(){ URL.revokeObjectURL(a.href); }, 500);
+  track("downloads");
+});
+
+/* ==================== SIGNUP / UNLOCK ==================== */
+function unlockVault(){
+  unlocked = true;
+  document.getElementById("vaultLocked").style.display = "none";
+  document.getElementById("vaultOpen").style.display = "block";
+  document.getElementById("navCta").textContent = "Prompt Library";
+  document.getElementById("navCta").setAttribute("href", "#vault");
+  renderPrompts();
+}
+
+var form = document.getElementById("leadForm");
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  var valid = true;
+  var name = document.getElementById("fullName"), email = document.getElementById("email"), school = document.getElementById("school");
+  function check(input, fieldId, ok){
+    var f = document.getElementById(fieldId);
+    if(ok){ f.classList.remove("invalid"); input.removeAttribute("aria-invalid"); }
+    else { f.classList.add("invalid"); input.setAttribute("aria-invalid","true"); valid=false; }
+  }
+  check(name,"fieldName",name.value.trim().length>1);
+  check(email,"fieldEmail",/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()));
+  check(school,"fieldSchool",school.value.trim().length>1);
+  if(!valid){ var fi = form.querySelector(".invalid input"); if(fi) fi.focus(); return; }
+
+  /* Save signup record */
+  var record = {name:name.value.trim(), email:email.value.trim(), school:school.value.trim(), role:document.getElementById("role").value, date:new Date().toISOString()};
+
+  /* SWAP 1: if a Formspree ID is set, send the signup to your inbox/dashboard */
+  if(CONFIG.FORMSPREE_ID){
+    fetch("https://formspree.io/f/"+CONFIG.FORMSPREE_ID, {
+      method:"POST",
+      headers:{"Accept":"application/json","Content-Type":"application/json"},
+      body: JSON.stringify(record)
+    }).catch(function(){});
+  }
+
+  /* Local backup copy (works in this preview; harmless on a live site) */
+  if(storageOK && window.storage){
+    window.storage.get("pv-signups").then(function(r){
+      var list = []; if(r && r.value){ try{ list = JSON.parse(r.value); }catch(e){} }
+      list.push(record);
+      window.storage.set("pv-signups", JSON.stringify(list));
+    }).catch(function(){ try{ window.storage.set("pv-signups", JSON.stringify([record])); }catch(e){} });
+  }
+  track("signups");
+  document.getElementById("formWrap").style.display = "none";
+  document.getElementById("successMsg").style.display = "block";
+  unlockVault();
+});
+
+/* ==================== NYANZI CHATBOT ==================== */
+var chatPanel = document.getElementById("chatPanel");
+var chatBody = document.getElementById("chatBody");
+var chatInput = document.getElementById("chatInput");
+var chatHistory = [];   /* {role, content} for the AI API */
+var learnings = [];     /* persisted Q&A pairs Nyanzi "learns" from */
+var aiAvailable = true; /* flips false if the API is unreachable (e.g., on GitHub Pages) */
+
+function loadLearnings(){
+  if(storageOK && window.storage){
+    window.storage.get("pv-nyanzi-learnings").then(function(r){
+      if(r && r.value){ try{ learnings = JSON.parse(r.value); }catch(e){} }
+    }).catch(function(){});
+  }
+}
+function saveLearning(q, a){
+  learnings.push({q:q, a:a, d:new Date().toISOString()});
+  if(learnings.length > 30) learnings = learnings.slice(-30); /* keep recent 30 */
+  if(storageOK && window.storage){
+    try{ window.storage.set("pv-nyanzi-learnings", JSON.stringify(learnings)); }catch(e){}
+  }
+}
+
+function addMsg(text, who){
+  var div = document.createElement("div");
+  div.className = "msg "+who;
+  div.textContent = text;
+  chatBody.appendChild(div);
+  chatBody.scrollTop = chatBody.scrollHeight;
+  return div;
+}
+
+document.getElementById("chatFab").addEventListener("click", function(){
+  var open = chatPanel.classList.toggle("open");
+  if(open && chatBody.children.length === 0){
+    addMsg("Hello! I'm Nyanzi 🦉 — your guide to the Prompt Vault. Ask me how to use a prompt, help finding the right one, or anything about using AI in your teaching.", "bot");
+  }
+  if(open) chatInput.focus();
+});
+document.getElementById("chatClose").addEventListener("click", function(){ chatPanel.classList.remove("open"); });
+
+document.getElementById("chatSuggest").addEventListener("click", function(e){
+  var chip = e.target.closest(".chip"); if(!chip) return;
+  chatInput.value = chip.textContent;
+  sendChat();
+});
+
+function buildSystemPrompt(){
+  var catSummary = CATS.map(function(c){
+    var titles = P.filter(function(p){return p.c===c.id;}).slice(0,40).map(function(p){return p.t;}).join(", ");
+    return c.name+": "+titles;
+  }).join("\n");
+  var learned = learnings.slice(-10).map(function(l){ return "Q: "+l.q+" → A given: "+l.a.slice(0,200); }).join("\n");
+  return "You are Nyanzi, a friendly, concise AI assistant on 'The Educator's AI Prompt Vault' website created by Ronald Nyanzi. The site offers 200 free AI prompts for educators across 6 categories. You help teachers (often with little tech experience) find the right prompt, understand how to use prompts (copy, paste into ChatGPT/Claude/Gemini/Copilot, replace [bracketed] placeholders), and answer general questions about AI in education. Be warm, practical, and brief (under 120 words unless asked for detail). The site is free; users sign up with name/email/school to unlock the vault. There is a Download All button for offline use. Prompt categories and titles:\n"+catSummary+(learned ? "\n\nRecent questions you've answered before (use these to stay consistent and improve):\n"+learned : "");
+}
+
+/* Simple keyword fallback when the AI API isn't available (e.g., static hosting) */
+function fallbackAnswer(q){
+  var s = q.toLowerCase();
+  if(/how.*(use|work)|paste|copy|start/.test(s)) return "It's simple! 1) Sign up (free) to unlock the vault. 2) Find a prompt and tap Copy. 3) Paste it into ChatGPT, Claude, Gemini, or Copilot. 4) Replace the [bracketed] parts with your details — like your subject or grade level. That's it!";
+  if(/rubric/.test(s)) return "Check the 📝 Assessment & Rubrics category — there are rubric prompts for essays, projects, and presentations, plus a 'Rubric Simplifier' that turns any rubric into student-friendly language. Use the search box and type 'rubric' to see them all.";
+  if(/quiz|test|exam/.test(s)) return "The 📝 Assessment & Rubrics category has prompts for multiple-choice quizzes, full exam papers, open-book exams, marking schemes, and more. Try searching 'quiz' or 'exam' in the library search box.";
+  if(/lesson|plan/.test(s)) return "The 📚 Lesson Planning category covers full lesson plans, unit plans, warm-ups, low-resource lessons, games, and more. Search 'lesson' in the library to browse them.";
+  if(/parent|family|home/.test(s)) return "The 📧 Parent Communication category has 33 ready-made templates — progress emails, newsletters, difficult conversations, SMS templates, and more.";
+  if(/differen|struggl|special|support/.test(s)) return "Look in 🎯 Differentiation — it has prompts for tiered activities, simplifying texts, large classes, multi-grade classrooms, and supporting diverse learners.";
+  if(/which (ai|tool)|chatgpt|claude|gemini|copilot|best/.test(s)) return "All the prompts work with any AI chatbot — ChatGPT, Claude, Gemini, and Copilot. If you're just starting, pick whichever is easiest to access, paste a prompt, and fill in the [brackets]. The prompt does the heavy lifting!";
+  if(/free|cost|pay|price/.test(s)) return "Everything here is 100% free. Sign up with your name and email, and all 200 prompts unlock instantly — including the download for offline use.";
+  if(/download|offline/.test(s)) return "Yes! Once you've signed up, click the '⬇ Download All' button at the top of the prompt library to save all 200 prompts as a text file you can use offline.";
+  return "Great question! I couldn't find a precise answer for that one, but here's a tip: use the search box in the prompt library to find prompts by keyword (try words like 'rubric', 'email', or 'game'). And remember — every prompt works by copy, paste, and replacing the [bracketed] parts. I've noted your question so the library can keep improving!";
+}
+
+function sendChat(){
+  var q = chatInput.value.trim();
+  if(!q) return;
+  chatInput.value = "";
+  addMsg(q, "user");
+  track("chat_messages");
+  var typing = addMsg("Nyanzi is thinking…", "bot");
+  typing.classList.add("typing");
+
+  chatHistory.push({role:"user", content:q});
+  if(chatHistory.length > 16) chatHistory = chatHistory.slice(-16);
+
+  if(!aiAvailable){
+    setTimeout(function(){
+      typing.remove();
+      var ans = fallbackAnswer(q);
+      addMsg(ans, "bot");
+      chatHistory.push({role:"assistant", content:ans});
+      saveLearning(q, ans);
+    }, 500);
+    return;
+  }
+
+  var endpoint = CONFIG.AI_PROXY_URL || "https://api.anthropic.com/v1/messages";
+  fetch(endpoint, {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify({
+      model:"claude-sonnet-4-6",
+      max_tokens:1000,
+      system: buildSystemPrompt(),
+      messages: chatHistory
+    })
+  }).then(function(r){ return r.json(); })
+  .then(function(data){
+    typing.remove();
+    var text = (data.content||[]).map(function(b){ return b.type==="text" ? b.text : ""; }).join("").trim();
+    if(!text) throw new Error("empty");
+    addMsg(text, "bot");
+    chatHistory.push({role:"assistant", content:text});
+    saveLearning(q, text);
+  })
+  .catch(function(){
+    aiAvailable = false;
+    typing.remove();
+    var ans = fallbackAnswer(q);
+    addMsg(ans, "bot");
+    chatHistory.push({role:"assistant", content:ans});
+    saveLearning(q, ans);
+  });
+}
+document.getElementById("chatSend").addEventListener("click", sendChat);
+chatInput.addEventListener("keydown", function(e){ if(e.key==="Enter") sendChat(); });
+
+/* ==================== GENERAL UI ==================== */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+var burger = document.getElementById("hamburger"), navLinks = document.getElementById("navLinks");
+burger.addEventListener("click", function(){
+  var open = navLinks.classList.toggle("open");
+  burger.classList.toggle("open", open);
+  burger.setAttribute("aria-expanded", open?"true":"false");
+});
+navLinks.addEventListener("click", function(e){
+  if(e.target.tagName==="A"){ navLinks.classList.remove("open"); burger.classList.remove("open"); burger.setAttribute("aria-expanded","false"); }
+});
+
+var faders = document.querySelectorAll(".fade-in");
+if("IntersectionObserver" in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("visible"); io.unobserve(en.target); } });
+  },{threshold:0.12});
+  faders.forEach(function(el){ io.observe(el); });
+} else { faders.forEach(function(el){ el.classList.add("visible"); }); }
+
+document.querySelectorAll(".faq-q").forEach(function(q){
+  q.addEventListener("click", function(){
+    var item = q.parentElement, answer = item.querySelector(".faq-a"), isOpen = item.classList.contains("open");
+    document.querySelectorAll(".faq-item.open").forEach(function(o){
+      if(o!==item){ o.classList.remove("open"); o.querySelector(".faq-q").setAttribute("aria-expanded","false"); o.querySelector(".faq-a").style.maxHeight="0"; }
+    });
+    if(isOpen){ item.classList.remove("open"); q.setAttribute("aria-expanded","false"); answer.style.maxHeight="0"; }
+    else { item.classList.add("open"); q.setAttribute("aria-expanded","true"); answer.style.maxHeight=answer.scrollHeight+"px"; track("faq_opens"); }
+  });
+});
+
+var toTop = document.getElementById("toTop");
+window.addEventListener("scroll", function(){ toTop.classList.toggle("show", window.scrollY>500); }, {passive:true});
+toTop.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+
+/* ==================== INIT ==================== */
+/* SWAP 2: load Google Analytics automatically if an ID is set */
+if(CONFIG.GA_ID){
+  var gaScript = document.createElement("script");
+  gaScript.async = true;
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + CONFIG.GA_ID;
+  document.head.appendChild(gaScript);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", CONFIG.GA_ID);
+}
+
+renderFilters();
+loadAnalytics().then(function(){
+  track("visits");
+  loadLearnings();
+});
+})();
+</script>
+</body>
+</html>
